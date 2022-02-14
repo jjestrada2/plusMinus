@@ -29,6 +29,7 @@ function readLine() {
 function plusMinus(arr) {
     // Write your code here
    
+   /* SOL 1
     var positiveNumbers=0;
     var negativeNumbers=0;
     var cero=0;
@@ -46,6 +47,28 @@ function plusMinus(arr) {
     console.log(positiveNumbers/arr.length);
     console.log(negativeNumbers/arr.length);
     console.log(cero/arr.length);
+*/
+
+//SOL 2
+
+    var positiveNumbers=0;
+    var negativeNumbers=0;
+    var cero=0;
+    
+    arr.forEach((element,index)=>{
+        if(element>0){
+            positiveNumbers++;
+        }else if(element<0){
+            negativeNumbers++;
+        }else{
+            cero++;
+        }
+    })
+    
+    console.log(positiveNumbers/arr.length);
+    console.log(negativeNumbers/arr.length);
+    console.log(cero/arr.length);
+
 }
 
 function main() {
